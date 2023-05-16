@@ -32,4 +32,13 @@ class Booking {
         }
         return $data;
     }
+
+    public function getAllBooking(){
+        $data = DB::getData("Select * from roombook");
+        $books = [];
+        foreach ($data as $key => $value) {
+            $books[] = $value;
+        }
+        return $books;
+    }
 }

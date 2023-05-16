@@ -25,6 +25,9 @@ include('db.php')
                     <li>
                         <a  href="../userhome.php"><i class="fa fa-home"></i> HOMEPAGE</a>
                     </li>
+                    <li>
+                        <a  href="edit-booking.php"><i class="fa fa-home"></i> My Bookings</a>
+                    </li>
                     
 					</ul>
 

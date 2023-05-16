@@ -180,19 +180,22 @@ if(!isset($_SESSION["user"]))
 										$co =$trow['stat']; 
 										if($co=="" || $co == 'Not Conform')
 										{
+                                            if($trow['stat'] == ''){
+                                                $trow['stat'] = 'Not Confirmed';
+                                            }
 											echo"<tr>
-												<th>".$trow['id']."</th>
-												<th>".$trow['FName']." ".$trow['LName']."</th>
-												<th>".$trow['Email']."</th>
-												<th>".$trow['Country']."</th>
-												<th>".$trow['TRoom']."</th>
-												<th>".$trow['Bed']."</th>
-												<th>".$trow['Meal']."</th>
-												<th>".$trow['cin']."</th>
-												<th>".$trow['cout']."</th>
-												<th>".$trow['stat']."</th>
+												<td>".$trow['id']."</td>
+												<td>".$trow['FName']." ".$trow['LName']."</td>
+												<td>".$trow['Email']."</td>
+												<td>".$trow['Country']."</td>
+												<td>".$trow['TRoom']."</td>
+												<td>".$trow['Bed']."</td>
+												<td>".$trow['Meal']."</td>
+												<td>".$trow['cin']."</td>
+												<td>".$trow['cout']."</td>
+												<td>".$trow['stat']."</td>
 												
-												<th><a href='roombook.php?rid=".$trow['id']." ' class='btn btn-primary'>Pending</a></th>
+												<td><a href='roombook.php?rid=".$trow['id']." ' class='btn btn-primary'>Edit</a></td>
 												</tr>";
 										}	
 									

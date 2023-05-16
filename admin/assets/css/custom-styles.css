@@ -430,5 +430,23 @@ padding-top: 14px;
 font-size: 19px;
 }
 }
-
-
+ul#bookinglist {
+    list-style: none;
+    padding: 0;
+    width: 98%;
+    margin: 0 auto;
+}
+ul#bookinglist a {
+    color: #000;
+    padding: 7px;
+    display: flex;
+    background: #fff;
+    margin: 2px 0;
+    justify-content: space-between;
+}
+ul#bookinglist li.confirmed a {
+    background: #5cb85c;
+}
+ul#bookinglist li.canceled a {
+    background: #d39090;
+}
