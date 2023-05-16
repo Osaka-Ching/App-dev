@@ -107,7 +107,7 @@ include('db.php')
 								</div>
 								<div class="form-group">
                                             <label>Phone Number</label>
-                                            <input name="phone" type ="number" class="form-control" required>
+                                            <input name="phone" type ="number" class="form-control" maxlength="11" required>
                                             
                                </div>
 							   
