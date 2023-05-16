@@ -180,12 +180,12 @@ include('db.php')
 
 							  <div class="form-group">
                                             <label>Check-In</label>
-                                            <input name="cin" type ="date" class="form-control">
+                                            <input name="cin" type ="date" class="form-control" min="2023-05-15">
                                             
                                </div>
 							   <div class="form-group">
                                             <label>Check-Out</label>
-                                            <input name="cout" type ="date" class="form-control">
+                                            <input name="cout" type ="date" class="form-control" min="2023-05-15">
                                             
                                </div>
                        </div>
